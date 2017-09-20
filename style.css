@@ -1,0 +1,28 @@
+body {
+    background-color: #ffe3ae;
+}
+#logo {
+    float: left;
+    width: 150px;
+}
+h1 {
+    color: #b70f0a;
+    margin-left: 200px;
+}
+#tel-top {
+    width: 100px;
+}
+#contact-us {
+    background-color: #5e0202;
+}
+@media screen and (min-width:600px) {
+  nav {
+    float: right;
+    width: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
