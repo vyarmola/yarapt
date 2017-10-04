@@ -4,116 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Аптека</title>
-        <link rel="stylesheet" href="style.css">
+    <title>Аптека</title>
+    <link rel="stylesheet" href="css/index.css">
+        
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!--<script src="js/index.js"></script>-->
 </head>
 <body>
-    <header>
-        <img id="logo" src="img/logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href=index.html>Головна</a>
-                </li>
-                <li>
-                    <a>Про аптеку</a>
-                </li>
-                <li>
-                    <a>Новинки</a>
-                </li>
-                <li>
-                    <a>Акції</a>
-                </li>
-                <li>
-                    <a>Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <h1>АПТЕКА</h1>
-            <p>Графік роботи:<br>
-            З понеділка по п'ятницю 8:00-20:00<br>
-            У суботу з 8:00-18:00</p>
-        </div>    
-        <div>    
-            <img src="img/phone-green.png" id="tel-top" alt=tel-top>
-            <a>+380 (67) 998 55 85</a>
-        </div>
+    <header class="wrapper-menu">
+      <div class="logo">
+      </div>
+      <div class="button" id="btn-main"><a href=#>Головна</a>
+      </div>
+      <div class="button" id="btn-about"><a href=#>Про аптеку</a>
+      </div>
+      <div class="button" id="btn-news"><a href=#>Новини</a>
+      </div>
+      <div class="button" id="btn-sale"><a href=#>Акції</a>
+      </div>
+      <div class="button" id="btn-contacts"><a href=#>Контакти</a>
+      </div>
+      <div class="title"><a>Аптека</a>
+      </div>
+      <div class="schedule">
+          <p>Графік роботи:</p>
+          <p>З понеділка по п'ятницю 8:00-20:00</p>
+          <p>У суботу з 8:00-18:00</p>
+      </div>
+      <div class="tel-top-logo">
+      </div>
+      <div class="tel-contact">+380 (67) 998 55 85
+      </div>
     </header>
-    <br>
     <main>
-        <div>
-            <img src="img/trade-room.jpg"
-            alt="trade-room"
-            height="500">
+        <img class="my-photo" src="img/trade-room.jpg">
+        <!--<div class="gallery">
+            <img class="my-photo" src="img/dada.jpg">
+            <img class="my-photo" src="img/trade-room.jpg">
+            <img class="my-photo" src="img/dada.jpg">
+            <img class="my-photo" src="img/trade-room.jpg">
         </div>
-        <article>
-            <h2>Про нас</h2>
-            <p>Ми працюємо для Вас з 2016 року, та намагаємось забезпечити високий рівень сервісу, широкий асортимент товарів за прийнятними цінами.
+        <button class="btn-to-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="btn-to-right" onclick="plusDivs(1)">&#10095;</button>-->
+        <div class="container">
+            <div id="about"><a>Про нас</a>
+            </div>
+            <div id="about-text"><a>Ми працюємо для Вас з 2016 року, та намагаємось забезпечити високий рівень сервісу, широкий асортимент товарів за прийнятними цінами.
 У нас працюють досвідчені та привітні фахівці, які завжди готові надати Вам вичерпну інформацію та допомогти у виборі потрібних Вам товарів.
-Основною метою для нас є - здоровий та задоволений клієнт!
-            </p>
-        </article>
-        <article>
-            <h2>Новинки</h2>
-            <img src="img/dada.jpg"
-            alt="new"
-            height="300">
-            <a>тексттексттексттексттексттексттексттексттексттексттексттексттексттексттексттекст</a>
-            <img src="img/dada.jpg"
-            alt="new"
-            height="300">
-            <a>тексттексттексттексттексттексттексттексттексттексттексттексттексттексттексттекст</a>
-        </article>
-        <div>
-            <h2>Акційні пропозиції:</h2>
-            <img src="img/dada.jpg"
-            alt="sale"
-            height="300">
-            <a>назва товару</a>
-            <p>ціна</p>
+Основною метою для нас є - здоровий та задоволений клієнт!</a>
+            </div>
+            <div id="new-goods"><a>Новинки</a>
+                <div id="goods"><img src="img/dada.jpg">
+                </div>
+                <div id="goods"><img src="img/dada.jpg">
+                </div>
+                <div id="goods"><img src="img/dada.jpg">
+                </div>
+                <div id="goods"><img src="img/dada.jpg">
+                </div>
+            </div>
+            
+            <div id="sale"><a>Акційні пропозиції</a>
+                <div id="img-sale"><img src="img/dada.jpg">
+                </div>
+                <div id="img-sale"><img src="img/dada.jpg">
+                </div>
+            </div>
         </div>
-        <div id="contact-us">
-            <br>
-            <h3>Якщо у Вас виникли запитання, пропозиції, побажання чи ідеї, які допоможуть нам обслуговувати Вас ще краще, звертайтесь прямо зараз</h3>
-            <h2>Зворотній зв'язок</h2>
+        <div class="container-form">
+            <p class="feedback">Зворотній зв'язок</p>
             <form action="https://formspree.io/yarvas@googlemail.com" method="POST">
-        <label>Ваше Ім'я*:
-            <input type="text" name="Ваше Ім'я" placeholder="Ваше Ім'я" required>
-            </label><br>
-        <label>Ваша ел. пошта*:   
-            <input type="email" name="Ваша елек. пошта" placeholder="Ваша елек. пошта" required></label><br>
-        <label>Ваш контактний телефон:   
-            <input type="tel" name="Ваш контактний телефон" placeholder="012 345 67 89"></label><br>
-        <label>Ваше Повідомлення*:
-            <textarea placeholder="Ваше Повідомлення" required></textarea>
-        </label><br>
-            <input type="submit" value="Надіслати">
-            <input type="reset" value="Скасувати">
+                <p id="form-name">Ваше Ім'я*:</p>
+                <label id="input-name">
+                    <input id="user-name" type="text" name="Ваше Ім'я" placeholder="Ваше Ім'я" required>
+                </label>
+                <p id="form-mail">Ваша ел. пошта*:</p>
+                <label id="input-mail">   
+                    <input id="user-email" type="email" name="Ваша елек. пошта" placeholder="Ваша елек. пошта" required>
+                </label>
+                <p id="form-tel">Контактний телефон:</p>
+                <label id="input-tel">   
+                    <input id="user-tel" type="tel" name="Ваш контактний телефон" placeholder="(099) 111 22 33">
+                </label>
+                <p id="form-msg">Ваше Повідомлення*:</p>
+                <label id="input-msg">
+                    <textarea id="user-textarea" placeholder="Ваше Повідомлення" required></textarea>
+                </label>
+                <span id="submit"><input id="submit-btn" type="submit" value="Надіслати">
+                </span>
             </form>
-            <br>
-            <img src="img/phone-black.jpg"
-            alt="tel-bottom"
-            height="150">
-            <a>+380 (67) 998 55 85</a>
-            <img src="img/mail.png"
-            alt="mail"
-            height="150">
-            <a>yarapt1@gmail.com</a>
-        </div>
-        <div>
-            <h2>Як нас знайти:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3062.2556125428173!2d24.07330160968391!3d49.80412003772053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1505845591071"
-                    width="600" height="450" style="border:0" allowfullscreen>
-            </iframe>
-            <img src="img/adress.png"
-            alt="Adress"
-            height="150">
-            <a>м. Львів, вул. Пасічна, 171</a>
         </div>
     </main>
     <footer>
-        <h4>Василь Ярмола&reg;</h4>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1487.5462138408418!2d24.073996800387363!3d49.80390414136853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c6e3ec3ca93609f!2z0JDQv9GC0LXQutCw!5e0!3m2!1suk!2sua!4v1506886922265"></iframe>
+        </div>
+        <div id="adress-logo">
+        </div>
+        <div id="adress">
+            <p>м. Львів, вул. Пасічна, 171</p>
+        </div>
+        <div id="tel-bot-logo">
+        </div>
+        <div id="tel-bot">
+             <p>+38 (067) 998 55 85</p>   
+        </div>
+        <div id="mail-logo">
+        </div>
+        <div id="mail">
+            <p>yaraptn1@gmail.com</p>
+        </div>
+        <div id="year">
+            <p>2017</p>
+        </div>
+        <div id="copy">
+            <p>Василь Ярмола &reg;</p>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
